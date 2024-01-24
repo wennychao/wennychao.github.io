@@ -17,7 +17,7 @@ body {
     padding-bottom: calc(var(--gutter)*3);
     padding-left: var(--gutter);
     padding-right: var(--gutter);
-    color: var(--color);
+    /*color: var(--color);*/
     display: flex;
     flex-direction: column;
     row-gap: var(--gutter);
