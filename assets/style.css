@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display:wght@600;700;800;900&family=Explora&family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poiret+One&family=Poppins:wght@100;200;400;600;700;800&family=Press+Start+2P&family=Six+Caps&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Merriweather+Sans:wght@400;700;800&display=swap');
 
 :root {
     --font-size: 20px;
-    --color: rgb(237, 237, 237);
+    --color: rgb(59, 102, 233);
     --gutter: calc(var(--font-size)*1.618);
 }
 
@@ -12,12 +12,22 @@
     }
 }
 
+.header-container { 
+    display: flex; 
+    justify-content: space-between;
+    padding: 0;
+
+} 
+   
+.header-item { 
+    margin: 0;
+} 
+  
 body {
-    background-color: rgb(43, 43, 43);
-    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: var(--font-size);
-    padding-top: calc(var(--gutter)*3);
-    padding-bottom: calc(var(--gutter)*3);
+    padding-top: 20px;
     padding-left: var(--gutter);
     padding-right: var(--gutter);
     color: var(--color);
@@ -27,23 +37,43 @@ body {
 }
 
 li {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: calc(var(--font-size)*3);
+    margin-left: 28rem;
 }
 
 li:hover {
-    color: grey;
+    font-family: 'Bodoni Moda', serif;
     font-style: italic;
 }
 
+.number {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 18px;
+}
+
 h1 {
-    color: palevioletred;
-    font-size: calc(var(--font-size)*2);
-    font-family: 'Press Start 2P', system-ui;
+    font-size: calc(var(--font-size)*1.4);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: calc(var(--font-size)*4);
+    font-family: 'Bodoni Moda', serif;
+    text-transform: uppercase;
+}
+
+hr {
+    height:1px;
+    width: 100%;
+    background-color:var(--color);
 }
 
 footer {
-    color: var(--color);
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     bottom: 0;
     width: 100%;
