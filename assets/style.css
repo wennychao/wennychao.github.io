@@ -128,4 +128,8 @@ footer {
         font-size: calc(var(--font-size)*2.5);
         margin-left: 0rem;
     }   
+
+    body {
+        background-color: blanchedalmond;
+    }
 }
