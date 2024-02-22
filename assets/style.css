@@ -2,7 +2,7 @@
 
 :root {
     --font-size: 20px;
-    --color: rgb(178, 214, 210);
+    --color: rgb(158, 0, 0);
     --gutter: calc(var(--font-size)*1.618);
 }
 
@@ -10,15 +10,14 @@
     display: flex; 
     justify-content: space-between;
     padding: 0;
-
 } 
    
 .header-item { 
     margin: 0;
 } 
-  
+
 body {
-    background-color: rgb(23, 23, 23);
+    /* background-color: rgb(23, 23, 23); */
     font-family: 'Merriweather Sans', sans-serif;
     font-size: var(--font-size);
     padding-top: 20px;
@@ -30,10 +29,15 @@ body {
     row-gap: var(--gutter);
 }
 
+#background-image {
+    background-image: url(/b13.jpeg);
+    background-size: cover;
+}
+
 li {
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
-    font-size: calc(var(--font-size)*3);
+    font-size: calc(var(--font-size)*2);
     margin-left: 28rem;
 }
 
@@ -68,7 +72,7 @@ h1:nth-child(2) {
 }
 
 h2 {
-    font-size: calc(var(--font-size)*4);
+    font-size: calc(var(--font-size)*1);
     font-family: 'Bodoni Moda', serif;
     text-transform: uppercase;
     margin-top: 1rem;
@@ -89,13 +93,17 @@ footer {
     align-items: center;
 }
 
-
-
-
 @media (max-width: 480px) {
     :root {
         --font-size: 16px;
     }
+
+
+#background-image {
+    background-image: url(/b12.jpeg);
+    background-size: cover;
+    background-color: rgba(44, 26, 26, 0.856);
+}
 
     body {
         font-size: var(--font-size);
@@ -121,6 +129,12 @@ footer {
     :root {
         --font-size: 20px;
     }
+
+#background-image {
+    background-image: url(/b12.jpeg);
+    background-size: cover;
+    background-color: rgba(56, 56, 56, 0.318);
+}
 
     h1 {
         font-size: 16px;
